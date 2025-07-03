@@ -2,8 +2,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("messageForm");
   const nameInput = document.getElementById("name");
+  
   const emailInput = document.getElementById("email");
-  const messageInput = document.getElementById("userMessage");
 
   nameInput.addEventListener("input", function () {
     const name = nameInput.value.trim();
