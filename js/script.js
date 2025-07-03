@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const nameInput = document.getElementById("name");
   const emailInput = document.getElementById("email");
   const messageInput = document.getElementById("userMessage");
-  const preview = document.getElementById("messagePreview");
 
   nameInput.addEventListener("input", function () {
     const name = nameInput.value.trim();
