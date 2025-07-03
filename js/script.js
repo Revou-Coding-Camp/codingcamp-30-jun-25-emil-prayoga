@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const messageInput = document.getElementById("userMessage");
   const preview = document.getElementById("messagePreview");
 
-  // Validasi saat input nama berubah
   nameInput.addEventListener("input", function () {
     const name = nameInput.value.trim();
     const nameRegex = /^[A-Za-z\s]+$/;
@@ -16,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (!nameRegex.test(name)) {
       nameInput.setCustomValidity("Nama hanya boleh berisi huruf dan spasi.");
     } else {
-      nameInput.setCustomValidity(""); // valid
+      nameInput.setCustomValidity("");
     }
   });
 

@@ -42,7 +42,6 @@ nav ul {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Saat tombol ditekan */
 .nav-btn:active {
   background-color: #333;
   color: #fff;
@@ -144,7 +143,7 @@ ul {
 
 .project {
   position: relative;
-  width: 325px;         /* Ukuran tetap */
+  width: 325px;         
   height: 180px;
   overflow: hidden;
   border-radius: 8px;
@@ -251,7 +250,6 @@ footer {
   margin-top: 24px;
 }
 
-/* Responsif Mobile */
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
