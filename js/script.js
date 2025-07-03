@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const userName = prompt("Masukkan nama Anda:");
+  if (userName) {
+    document.getElementById("welcomeText").textContent = `Hi ${userName}, Welcome To Website`;
+  }
+
 document.getElementById("year").textContent = new Date().getFullYear();
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("messageForm");
@@ -39,4 +45,5 @@ document.addEventListener("DOMContentLoaded", function () {
       <b>Pesan:</b> ${userMessage}
     `;
   });
+});
 });
