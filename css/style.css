@@ -27,12 +27,15 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 4px;
+  gap: 2px;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-btn {
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 8px 16px; 
+    margin-top: 10px;
   border: 1px solid #333;
   border-radius: 4px;
   background-color: #fdf5e6;
@@ -40,13 +43,15 @@ nav ul {
   font-weight: bold;
   font-size: 14px;
   transition: background-color 0.2s ease, color 0.2s ease;
+  display: inline-block;
+  line-height: 1; 
 }
+
 
 .nav-btn:active {
   background-color: #333;
   color: #fff;
 }
-
 
 main {
   display: grid;
@@ -57,27 +62,17 @@ main {
     "service service"
     "enjoy enjoy";
   gap: 24px;
-  padding: 32px;
-  max-width: 1200px;
-  margin: auto;
+  padding: 24px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 section,
 article {
   border-radius: 8px;
-}
-
-.welcome,
-.deskripsi,
-.service-section,
-.enjoy {
   background-color: #fdf5e6;
   padding: 24px 32px;
-}
-
-.message-us {
-  background-color: #fdf5e6;
-  padding: 24px 32px;
+  width: 100%; /* agar melebar penuh */
 }
 
 .welcome {
@@ -99,6 +94,8 @@ article {
 .message-us {
   grid-area: message;
   border-radius: 8px;
+  background-color: #fdf5e6;
+  padding: 24px 32px;
 }
 
 h2 {
@@ -140,10 +137,9 @@ ul {
   padding: 0;
 }
 
-
 .project {
   position: relative;
-  width: 325px;         
+  width: 325px;
   height: 180px;
   overflow: hidden;
   border-radius: 8px;
@@ -182,7 +178,6 @@ ul {
   opacity: 1;
 }
 
-
 .form-section {
   display: flex;
   flex-direction: column;
@@ -201,25 +196,18 @@ ul {
   border: 1px solid #fdf5e6;
   font-size: 14px;
   border-radius: 4px;
-}
-#messageForm input[type="text"],
-#messageForm input[type="email"]{
-  width: 100%;         
-  max-width: 100%;  
-  padding: 8px;
-  font-size: 14px;
-}
-
-
-#messageForm textarea {
-  padding: 8px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
   box-sizing: border-box;
-  resize: none;
   min-height: 125px;
+  resize: none;
+  font-family: Arial;
+}
+
+#messageForm input[type="text"],
+#messageForm input[type="email"] {
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  font-size: 14px;
 }
 
 button {
@@ -235,12 +223,10 @@ button {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-
 button:active {
   background-color: #555;
   color: #fff;
 }
-
 
 footer {
   text-align: center;
@@ -248,6 +234,14 @@ footer {
   background-color: #fdf5e6;
   font-size: 14px;
   margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+  main {
+    max-width: 98%;
+    padding: 16px;
+    gap: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -259,7 +253,8 @@ footer {
       "about"
       "service"
       "enjoy";
-    padding: 16px;
+    max-width: 100%;
+    padding: 8px;
   }
 
   nav ul {
@@ -285,5 +280,10 @@ footer {
 
   .project img {
     height: 140px;
+  }
+
+  section,
+  article {
+    padding: 16px;
   }
 }
