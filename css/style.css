@@ -132,18 +132,19 @@ ul {
   gap: 16px;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 100%;      /* agar sejajar dengan section */
   margin: 0 auto;
   padding: 0;
 }
 
 .project {
-  position: relative;
-  width: 325px;
-  height: 180px;
+  flex: 1 1 30%;       /* agar fleksibel 3 kolom */
+  max-width: 32%;      /* agar rapat tetapi tetap responsif */
+  aspect-ratio: 16/9;  /* menjaga rasio video */
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+  position: relative;
 }
 
 .project img {
@@ -177,6 +178,21 @@ ul {
 .project:hover h4 {
   opacity: 1;
 }
+
+@media (max-width: 1024px) {
+  .project {
+    flex: 1 1 45%;  
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+}
+
 
 .form-section {
   display: flex;
@@ -279,7 +295,7 @@ footer {
   }
 
   .project img {
-    height: 140px;
+    height: 100px;
   }
 
   section,
