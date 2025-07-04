@@ -159,7 +159,6 @@ ul {
 .project {
   flex: 1 1 30%;
   max-width: 32%;
-  aspect-ratio: 16/9;
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
