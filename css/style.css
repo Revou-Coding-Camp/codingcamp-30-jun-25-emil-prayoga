@@ -135,7 +135,6 @@ ul {
   justify-content: space-between;
 }
 
-/* Default untuk laptop */
 .project {
   flex: 1 1 calc(33.333% - 16px);
   max-width: calc(33.333% - 16px);
@@ -208,6 +207,15 @@ ul {
     color: white;
     text-align: center;
     border-radius: 0 0 12px 12px;
+  }
+
+  .project:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+  }
+
+  .project:hover h4 {
+    opacity: 1;
   }
 }
 
