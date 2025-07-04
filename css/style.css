@@ -191,13 +191,15 @@ ul {
     max-width: 100%;
     border-radius: 0;
     overflow: hidden;
+    height: auto;
   }
 
   .project img {
     width: 100%;
-    height: 350px;
+    height: 300px !important;
     object-fit: cover;
     display: block;
+    border-radius: 0;
   }
 
   .project h4 {
@@ -209,7 +211,6 @@ ul {
     margin-top: -4px;
   }
 }
-
 
 
 .form-section {
