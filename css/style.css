@@ -206,7 +206,7 @@ ul {
 
 @media (max-width: 600px) {
   .project {
-    flex: 1 1 100%;
+    flex: 1 1 300px;
     max-width: 100%;
   }
 }
