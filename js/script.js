@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const userName = prompt("Masukkan nama Anda:");
   if (userName) {
-    document.getElementById("welcomeText").textContent = `Hi ${userName}, Welcome To Website`;
+    document.getElementById("welcomeText").textContent = `Hi ${userName}, Welcome To TechNova`;
   }
 
 document.getElementById("year").textContent = new Date().getFullYear();
