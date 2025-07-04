@@ -208,6 +208,11 @@ ul {
     padding: 8px;
     margin-top: -4px; 
   }
+
+  .project img {
+  object-fit: contain;
+}
+
 }
 
 
