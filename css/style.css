@@ -259,12 +259,23 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas:
       "welcome"
-      "message"
       "about"
-      "service";
+      "service"
+      "message";
     max-width: 100%;
     padding: 8px;
   }
+
+@media (max-width: 768px) {
+  .project {
+    aspect-ratio: unset;
+  }
+
+  .project img {
+    height: auto;
+    object-fit: contain;
+  }
+}
 
   nav ul {
     flex-wrap: wrap;
@@ -284,7 +295,7 @@ footer {
 
   p,
   li {
-    font-size: 14.5px;
+    font-size:18px;
   }
 
   .project img {
